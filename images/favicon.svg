@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="4" fill="#0a0a0f"/>
+  <rect x="2" y="2" width="28" height="28" rx="3" fill="none" stroke="#00fff7" stroke-width="1.5"/>
+  <!-- Joystick base -->
+  <ellipse cx="16" cy="24" rx="8" ry="3" fill="#12121a" stroke="#00fff7" stroke-width="1"/>
+  <!-- Joystick stick -->
+  <rect x="14" y="10" width="4" height="14" rx="2" fill="#ff00ff"/>
+  <!-- Joystick ball -->
+  <circle cx="16" cy="8" r="4" fill="#ff00ff"/>
+  <circle cx="15" cy="7" r="1.5" fill="#ffaaff" opacity="0.6"/>
+  <!-- Glow effect -->
+  <circle cx="16" cy="8" r="5" fill="none" stroke="#ff00ff" stroke-width="0.5" opacity="0.5"/>
+</svg>
