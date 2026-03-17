@@ -1,0 +1,28 @@
+name: Deploy to GoDaddy FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 198.12.233.35
+          username: claudia@woodsidearcaderepair.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftp
+          server-dir: /
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/README.md
+            **/.github/**
